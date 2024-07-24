@@ -1,5 +1,6 @@
 FROM ruby:3.0.0
 
+RUN gem install nokogiri --platform=ruby
 ENV RAILS_ENV production
 RUN mkdir /mangosteen
 RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
